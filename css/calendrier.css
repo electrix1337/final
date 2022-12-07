@@ -1,0 +1,97 @@
+.calendrier {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.lesMois {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.content {
+    background-color: rgb(57, 57, 57);
+    opacity: 0.85;
+    background-size: cover;
+    position: relative;
+}
+
+.mois {
+    /*ceci est du a un bug*/
+    display: inline-flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /*pour une raison inconnu le html faisait 
+    un espace entre le #titre et lui même*/
+
+
+    background-color: black;
+
+    margin: 3px;
+    border: black 1px solid;
+    border-radius: 10px;
+    max-width: 300px;
+    padding: 10px;
+    padding-top: 0px;
+    top: 0px;
+}
+
+.nom_mois {
+    display: block;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 700;
+    margin-bottom: 15px;
+
+    color: rgb(190, 190, 190);
+}
+
+.jourSemaine {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.jourSemaine>div {
+    margin: 2px;
+    min-width: 35px;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.joursConteneur {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: rgb(140, 140, 140);
+}
+
+.joursConteneur>div {
+    margin: 0px 9.5px;
+    min-width: 20px;
+    text-align: center;
+}
+
+.titre {
+    display: block;
+    position: relative;
+    font-size: 50px;
+    font-weight: 500;
+    font-family: 'Alike';
+    text-align: center;
+    width: 100%;
+    margin-bottom: 10px;
+    -webkit-text-fill-color: rgb(77, 255, 0);
+    -webkit-text-stroke: 2px black;
+}
+
+.férié {
+    color: rgb(68, 255, 0);
+    font-weight: 900;
+}
+
+.férié:hover {
+    color: blue;
+}

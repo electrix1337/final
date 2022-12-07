@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         * {
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+            
+        .main{
+            margin: auto;
+            max-width: 1400px;
+        }
+        .boxContainer {
+            display:flex;
+            flex-wrap: wrap; 
+            gap: 20px;
+            
+        }
+        .box{
+            flex: 1; 
+            display: inline;
+            text-align: justify;
+            padding: 5px;
+
+        }
+        .box img{
+            width: 100%;
+        }
+        .largeBox{
+            flex: 2 !important;
+        }
+        .solitaryBox{
+            flex: 100%;
+            background-color: white;
+
+         
+            
+        }
+        .header{
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-size: 3em;
+            position:fixed;
+            top: 0px;
+            width: calc(min(100% , 1400px));
+            
+            
+        }
+        .headerBuffer{
+            height: 60px;
+        }
+        .header2{
+            background-color: black;
+            color: white;
+            text-align: center;
+            font-size: 1em;
+            position: fixed;
+            bottom: 0px;
+            width: calc(min(100% , 1400px));
+            
+            
+        }
+        .titre {
+            font-size: 3em;
+            text-align: justify;
+        }
+        .secondaire{
+            color: gray;
+            font-size: 1em;
+        }
+
+
+        @media only screen and (max-width: 600px){
+            .boxContainer {
+            display:flex;
+            flex-wrap: wrap; 
+            gap: 20px;
+            
+        }
+        .box{
+            flex: 1; 
+            display: inline;
+            text-align: justify;
+            padding: 5px;
+            flex: 100%;
+
+        }
+        .box img{
+            width: 100%;
+        }
+        .largeBox{
+            flex: 2 !important;
+        }
+        .solitaryBox{
+            flex: 100%;
+            background-color: white;
+
+         
+            
+        }
+        
+        .headerBuffer{
+            height: 60px;
+        }
+
+        
+        }
+        
+        .o1{
+            order: 1;
+            background-color: #b2c5dd;
+            border: 1px solid black;
+
+        }
+        .o2{
+            order: 2;
+            border: 1px solid black;
+        }
+        .o3{
+            background-color: #b2c5dd;
+            order: 3;
+            border: 1px solid black;
+
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="header"> Mon site web</div>
+        <div class="headerBuffer"></div>
+        <div class="boxContainer">
+            <div class="box largeBox o2">
+                <div class="box img"> </div>
+                <div class="titre">Titre Primaire</div>
+                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum praesentium ipsam obcaecati. Culpa corrupti et quia id? Animi laboriosam porro architecto quisquam magni excepturi velit nesciunt assumenda accusamus debitis. Earum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio optio suscipit minima, natus vitae sed illo maxime eum voluptatum numquam architecto expedita ipsam? Quod sapiente, illo adipisci dolorem repellat delectus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae officia numquam explicabo nesciunt omnis magnam eius accusamus veritatis vel quasi consequatur, aliquam, ipsum ipsam doloribus? Dolorem, earum. Modi, tenetur sequi?</p>
+                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum praesentium ipsam obcaecati. Culpa corrupti et quia id? Animi laboriosam porro architecto quisquam magni excepturi velit nesciunt assumenda accusamus debitis. Earum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio optio suscipit minima, natus vitae sed illo maxime eum voluptatum numquam architecto expedita ipsam? Quod sapiente, illo adipisci dolorem repellat delectus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae officia numquam explicabo nesciunt omnis magnam eius accusamus veritatis vel quasi consequatur, aliquam, ipsum ipsam doloribus? Dolorem, earum. Modi, tenetur sequi?</p>
+                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum praesentium ipsam obcaecati. Culpa corrupti et quia id? Animi laboriosam porro architecto quisquam magni excepturi velit nesciunt assumenda accusamus debitis. Earum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio optio suscipit minima, natus vitae sed illo maxime eum voluptatum numquam architecto expedita ipsam? Quod sapiente, illo adipisci dolorem repellat delectus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae officia numquam explicabo nesciunt omnis magnam eius accusamus veritatis vel quasi consequatur, aliquam, ipsum ipsam doloribus? Dolorem, earum. Modi, tenetur sequi?</p>
+                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum praesentium ipsam obcaecati. Culpa corrupti et quia id? Animi laboriosam porro architecto quisquam magni excepturi velit nesciunt assumenda accusamus debitis. Earum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio optio suscipit minima, natus vitae sed illo maxime eum voluptatum numquam architecto expedita ipsam? Quod sapiente, illo adipisci dolorem repellat delectus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae officia numquam explicabo nesciunt omnis magnam eius accusamus veritatis vel quasi consequatur, aliquam, ipsum ipsam doloribus? Dolorem, earum. Modi, tenetur sequi?</p>
+                
+            </div>
+            <div class="box o1">
+                <div class="secondaire">Titre secondaire</div>
+                <div class=".box img"> <img src="https://picsum.photos/id/177/600/400" alt=""></div>
+                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum praesentium ipsam obcaecati. Culpa corrupti et quia id? Animi laboriosam porro architecto quisquam magni excepturi velit nesciunt assumenda accusamus debitis. Earum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio optio suscipit minima, natus vitae sed illo maxime eum voluptatum numquam architecto expedita ipsam? Quod sapiente, illo adipisci dolorem repellat delectus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae officia numquam explicabo nesciunt omnis magnam eius accusamus veritatis vel quasi consequatur, aliquam, ipsum ipsam doloribus? Dolorem, earum. Modi, tenetur sequi?</p>
+            </div>
+            <div class="box o3">
+                <div class="secondaire">Titre secondaire</div>
+                <div class=".box img"><img src="https://picsum.photos/id/1040/600/400" alt=""></div>
+                
+                <p> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dolorum praesentium ipsam obcaecati. Culpa corrupti et quia id? Animi laboriosam porro architecto quisquam magni excepturi velit nesciunt assumenda accusamus debitis. Earum! Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio optio suscipit minima, natus vitae sed illo maxime eum voluptatum numquam architecto expedita ipsam? Quod sapiente, illo adipisci dolorem repellat delectus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae officia numquam explicabo nesciunt omnis magnam eius accusamus veritatis vel quasi consequatur, aliquam, ipsum ipsam doloribus? Dolorem, earum. Modi, tenetur sequi?</p>
+                
+            </div>
+            
+            <div class="header2">Auteur : Samuel Licursi </div>
+        </div>
+        
+    </div>
+</body>
+</html>
