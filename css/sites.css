@@ -1,3 +1,13 @@
 .téléchargement {
     margin-bottom: 20px;
 }
+h1 {
+    -webkit-text-stroke: 1px black;
+    color: white;
+}
+h2 {
+    margin-top: 30px;
+}
+h3 {
+    color: rgb(42, 42, 42);
+}
